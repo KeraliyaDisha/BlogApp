@@ -1,4 +1,5 @@
 import {defineField, defineType} from 'sanity'
+import menuItem from './objects/nav'
 
 export default defineType({
     name: 'navbar',
@@ -9,23 +10,7 @@ export default defineType({
         name: 'menuItems',
         title: 'Menu Items',
         type: 'array',
-        of: [
-          {
-            type: 'object',
-            fields: [
-              defineField({
-                name: 'title',
-                title: 'Title',
-                type: 'string',
-              }),
-              defineField({
-                name: 'link',
-                title: 'Link',
-                type: 'string',
-              }),
-            ],
-          },
-        ],
+        of: [menuItem],
       }),
     ],
   })

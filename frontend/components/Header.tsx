@@ -21,9 +21,9 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="border-b border-gray-200 dark:bg-gray-700">
-      <div className="max-w-screen-xl flex items-center justify-between mx-auto p-3">
-      <div className="flex items-center space-x-3">
+    <nav className="border-b border-gray-200 dark:bg-gray-700 m-3 rounded-md">
+      <div className="max-w-screen-xl flex items-center justify-between mx-auto p-1 pr-3.5 pl-3.5">
+      <div className="flex items-center space-x-2">
             <div className="relative">
               <svg
                 viewBox="0 0 40 40"
@@ -80,12 +80,12 @@ export default function Navbar() {
               BlogShare
             </span>
           </div>
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden md:flex items-center space-x-3">
           {Navbar?.menuItems.map((item) => (
             <a
               key={item.title}
               href={item.link}
-              className="py-2 px-3 text-gray-300 text-sm font-medium hover:text-gray-700 dark:hover:text-gray-400"
+              className="py-2 px-3 text-gray-300 text-[15px] font-medium hover:text-gray-700 dark:hover:text-gray-400"
             >
               {item.title}
             </a>
