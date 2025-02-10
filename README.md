@@ -1,2 +1,2 @@
 # BlogApp
-learning sanity
+Using Sanity and NextJs
