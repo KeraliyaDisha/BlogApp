@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { NavbarType } from "@/types";
-import { getNavbar } from "@/lib/sanityQueries";
+import { getNavbar } from "@/lib/sanity/queries/navbarQuery";
 import { useRouter } from "next/navigation";
 
 export default function Navbar() {

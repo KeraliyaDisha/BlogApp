@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { PostCard } from "@/components/PostCard";
-import { getBlogs } from "@/lib/sanityQueries";
+import { getBlogs } from "@/lib/sanity/queries/blogList";
 import { BlogPost } from "@/types";
 import { ArrowRight } from "lucide-react";
 

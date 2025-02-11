@@ -1,7 +1,6 @@
 import Image from "next/image";
-import { getBlogDetails } from "@/lib/sanityQueries";
+import { getBlogDetails } from "@/lib/sanity/queries/blogDetails";
 import {urlFor} from "@/lib/sanity"
-
 
 export default async function BlogDetails({
   params,
