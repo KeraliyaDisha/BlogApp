@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { PostCard } from "@/components/PostCard";
 import { BlogPost } from "@/types";
-import { getBlogs } from "@/lib/sanityQueries";
+import { getBlogs } from "@/lib/sanity/queries/blogList";
 
 export default async function PostPage() {
   const posts: BlogPost[] = await getBlogs();
